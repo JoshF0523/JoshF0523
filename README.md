@@ -33,6 +33,11 @@ A warehouse-focused inventory system combining printable QR labels, phone scanni
 
 `QR` • `Google Sheets` • `Google Apps Script` • `Windows` • `Scanner Hardware`
 
+### 🛠️ [Menusys Management Tool](projects/menusys-management-tool.md)
+A Windows management utility for Menusys comparison, editing, import/export, deployment, verification, and controlled POS restart workflows.
+
+`Windows GUI` • `Configuration Management` • `Deployment` • `Comparison` • `Verification`
+
 ---
 
 # Professional Work Portfolio
