@@ -1,111 +1,120 @@
-<h1 align="center">Josh Floyd</h1>
-<h3 align="center">Business Automation • Windows Systems • Practical Software</h3>
-
 <p align="center">
-I build practical software that turns repetitive, technical, or error-prone workflows into tools people can actually use.
+  <img src="assets/portfolio-header.svg" width="100%" alt="Josh Floyd - Business Automation, Windows Systems, Practical Software">
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/Python-Desktop%20Automation-blue" alt="Python">
-<img src="https://img.shields.io/badge/Windows-Systems%20Tools-blue" alt="Windows">
-<img src="https://img.shields.io/badge/PWA-Mobile%20First-purple" alt="PWA">
-<img src="https://img.shields.io/badge/Supabase-Backend-green" alt="Supabase">
-<img src="https://img.shields.io/badge/Vercel-Deployment-black" alt="Vercel">
+  <img src="https://img.shields.io/badge/Python-Desktop%20Automation-blue" alt="Python">
+  <img src="https://img.shields.io/badge/Windows-Systems%20Engineering-0078D4" alt="Windows">
+  <img src="https://img.shields.io/badge/PWA-Mobile%20First-purple" alt="PWA">
+  <img src="https://img.shields.io/badge/Supabase-Backend-3ECF8E" alt="Supabase">
+  <img src="https://img.shields.io/badge/Vercel-Deployment-black" alt="Vercel">
+  <img src="https://img.shields.io/badge/Automation-Operations-success" alt="Automation">
 </p>
-
----
 
 ## About Me
 
-My projects are built around real operational problems: household budgeting, warehouse inventory, technician diagnostics, remote system management, deployment workflows, and hardware maintenance.
+I build practical software that turns repetitive, technical, or error-prone workflows into **simple, repeatable tools with clear status, verification, and guardrails**.
 
-I focus on **simple interfaces, reliable automation, clear status reporting, and reducing the number of manual steps required to get a job done correctly**.
+My projects span household budgeting, warehouse inventory, Windows diagnostics, POS administration, remote deployment, firmware maintenance, configuration management, data mapping, and payment-device support.
 
-## Featured Projects
-
-| Project | What it solves | Focus |
-|---|---|---|
-| **[Monthly Bill Calendar](projects/monthly-bill-calendar.md)** | Plans bills around actual paychecks and keeps multiple household members synchronized | PWA • Supabase • Vercel • Mobile UX |
-| **[QR Inventory Manager](projects/qr-inventory-manager.md)** | Makes warehouse quantity updates fast from phones and USB scanners | QR • Google Sheets • Desktop + Mobile |
-| **[Log Collector](projects/log-collector.md)** | Collects the diagnostic information a technician needs from multiple remote systems | Python • Windows • Remote Diagnostics |
-| **[POS Scan Utility 1.0](projects/pos-scan-utility.md)** | Simplifies multi-system POS health and diagnostic checks | Windows • Remote Administration • GUI |
-| **[Menusys Management Tool](projects/menusys-management-tool.md)** | Centralizes selected-system configuration and deployment workflows | Deployment • Configuration • Windows |
-| **[Remote PINPAD Maintenance Utility](projects/remote-pinpad-maintenance.md)** | Coordinates a complex remote payment-device maintenance workflow safely | Hardware Maintenance • State Management • Automation |
+A large part of my work focuses on a specific challenge: taking procedures that normally require a technician to perform many manual steps across multiple systems and turning them into a controlled workflow that is easier to run, easier to understand, and harder to perform incorrectly.
 
 ---
 
 ## Flagship Applications
 
-### 💵 Monthly Bill Calendar
+### 💵 [Monthly Bill Calendar](projects/monthly-bill-calendar.md)
+A mobile-first household budgeting application built around **which paycheck should pay each bill**, not simply when the bill is due.
 
-A phone-first budgeting application built around **when money is actually available**, rather than simply listing monthly due dates.
+`PWA` • `Supabase` • `Vercel` • `Multi-user Sync` • `Pay-cycle Logic`
 
-It supports multiple people, independent bill sets, recurring paychecks, paycheck-based bill placement, editable check amounts, payment plans, bill enable/disable controls, synchronized data between phones, and future paycheck planning.
+### 📦 [QR Inventory Manager](projects/qr-inventory-manager.md)
+A warehouse-focused inventory system combining printable QR labels, phone scanning, USB HID scanners, desktop support, and shared quantity updates.
 
-**Why I built it:** traditional bill calendars show *when a bill is due*. This application focuses on *which paycheck should pay it*.
-
-➡️ **[View project details](projects/monthly-bill-calendar.md)**
-
-### 📦 QR Inventory Manager
-
-A warehouse inventory system designed around fast scanning rather than traditional POS workflows.
-
-The system combines printable QR labels, phone scanning, USB HID scanner support, simple `+1 / -1` quantity adjustments, desktop management, and a shared spreadsheet-backed inventory source.
-
-➡️ **[View project details](projects/qr-inventory-manager.md)**
+`QR` • `Google Sheets` • `Google Apps Script` • `Windows` • `Scanner Hardware`
 
 ---
 
-## Windows & Systems Automation
+# Professional Work Portfolio
 
-### 🧰 Log Collector
+➡️ **[View the complete categorized Work Projects Portfolio](WORK_PROJECTS.md)**
 
-A technician-focused utility that gathers recent diagnostic files from selected remote systems and packages the results into a clean collection archive. It removes much of the repetitive navigation normally required during troubleshooting.
+## Diagnostics & Troubleshooting
 
-➡️ **[View project details](projects/log-collector.md)**
+| Project | Purpose | Engineering Focus |
+|---|---|---|
+| **[POS Scan Utility 1.0](projects/pos-scan-utility.md)** | Centralized multi-system POS health and diagnostic scanning | Remote administration • GUI • Health checks |
+| **[Log Collector](projects/log-collector.md)** | Automated collection of current troubleshooting files into a clean archive | Remote files • Filtering • ZIP packaging |
+| **[Remote Event Log Scanner](projects/remote-event-log-scanner.md)** | Multi-device Windows event-log analysis with grouped results and drill-down details | Event logs • Filtering • Diagnostics UX |
 
-### 🖥️ POS Scan Utility 1.0
+## Deployment, Upgrades & Configuration
 
-A GUI-based remote diagnostic utility designed to make system checks easier to run and easier to understand. The operator works from a centralized interface instead of manually visiting individual systems.
+| Project | Purpose | Engineering Focus |
+|---|---|---|
+| **[Service Pack Upgrade Utility](projects/service-pack-upgrade-utility.md)** | Coordinates multi-target upgrades through install, reboot, recovery, and completion | Deployment orchestration • State machines • Reboot monitoring |
+| **[Healthy Benefits Upgrade Utility](projects/healthy-benefits-upgrade-utility.md)** | Guided remote software upgrade workflow with protection-state preservation | Remote deployment • Validation • State restoration |
+| **[Menusys Management Tool](projects/menusys-management-tool.md)** | Centralized configuration and selected-target deployment management | Configuration • Deployment • Operator workflow |
+| **[CFG Editor & Deployment Tool](projects/cfg-editor-deployment-tool.md)** | Source discovery, controlled configuration editing, and selected-lane deployment | Discovery • Configuration lifecycle • Validation |
+| **[WinPOS Restart Utility](projects/winpos-restart-utility.md)** | Verified remote application restart with context-aware execution | Process lifecycle • Interactive sessions • Remote automation |
 
-➡️ **[View project details](projects/pos-scan-utility.md)**
+## Hardware & Payment-System Maintenance
 
-### ⚙️ Menusys Management Tool
+| Project | Purpose | Engineering Focus |
+|---|---|---|
+| **[5916 Firmware Flash Utility](projects/5916-firmware-flash-utility.md)** | Scans, updates, and verifies display firmware across active systems | Firmware • Hardware integration • Verification-first automation |
+| **[Remote PINPAD Maintenance Utility](projects/remote-pinpad-maintenance.md)** | Coordinates complex remote payment-device maintenance and recovery | Payment hardware • State management • Process control |
 
-A centralized management utility for selecting target systems and carrying out controlled configuration/deployment workflows with clear operator feedback.
+## Data & Operational Automation
 
-➡️ **[View project details](projects/menusys-management-tool.md)**
-
-### 💳 Remote PINPAD Maintenance Utility
-
-A remote maintenance utility that coordinates several dependent steps around payment-device servicing, including application-state control, maintenance-state handling, device operations, verification, and controlled recovery.
-
-➡️ **[View project details](projects/remote-pinpad-maintenance.md)**
-
----
-
-## How I Approach Software
-
-I tend to build tools around four principles:
-
-- **Reduce manual work** — automate the repetitive parts without hiding important decisions from the operator.
-- **Make status obvious** — a technician should know what is happening, what succeeded, and what needs attention.
-- **Design for the person using it** — the interface should match the real workflow, not force the workflow to match the software.
-- **Build guardrails into automation** — especially when a tool touches remote systems, deployment, or hardware maintenance.
-
-## Technologies & Areas
-
-**Desktop & Windows:** Python, GUI applications, Windows automation, PowerShell, Batch, remote administration, executable packaging  
-**Web & Mobile:** Progressive Web Apps, mobile-first interfaces, Supabase, Vercel  
-**Data & Integration:** CSV processing, Google Sheets workflows, QR-code systems  
-**Operations:** deployment automation, configuration management, diagnostics, hardware maintenance, multi-system workflows
+| Project | Purpose | Engineering Focus |
+|---|---|---|
+| **[Mapping Utility](projects/mapping-utility.md)** | Converts historical product data into compact department mapping ranges | CSV analysis • Classification • Range inference |
+| **[QR Inventory Manager](projects/qr-inventory-manager.md)** | Fast warehouse quantity maintenance by QR or USB scanner | Inventory • QR • Shared data |
 
 ---
 
-## Public Portfolio Note
+## How I Design Automation
 
-Some projects in this portfolio were created for specialized operational environments. Public documentation intentionally omits credentials, internal infrastructure, proprietary data, environment-specific host information, and sensitive maintenance commands. The portfolio focuses on the engineering approach, workflow design, and user experience.
+My work repeatedly follows the same engineering principles:
+
+**Discover before acting.** Determine which systems are online, eligible, or in the correct state before making changes.
+
+**Verify transitions.** A command being launched is not the same as a task being completed. Important state changes are checked before the workflow moves forward.
+
+**Preserve original state.** When a utility temporarily changes a system for maintenance, it tracks what it changed and restores only what it owns.
+
+**Keep targets independent.** In multi-system operations, one failed device should not make the status of successful devices unclear.
+
+**Use technician-friendly status.** Operator-facing tools should explain what is happening in plain language rather than exposing unnecessary command-line noise.
+
+**Fail safely.** If preparation or verification fails, the tool should stop, isolate the affected target, or clearly identify what requires attention.
 
 ---
 
-<p align="center"><b>Simple interfaces. Reliable automation. Real-world usefulness.</b></p>
+## Technology & Engineering Areas
+
+### Desktop & Windows
+`Python` • `Windows GUI Applications` • `PowerShell` • `Batch` • `Remote Administration` • `Process Management` • `Executable Packaging`
+
+### Systems & Operations
+`Deployment Automation` • `Configuration Management` • `Windows Event Logs` • `Remote Diagnostics` • `Reboot Monitoring` • `State Machines` • `Fleet Operations`
+
+### Hardware & Integration
+`Firmware Maintenance` • `Payment Peripherals` • `QR Scanners` • `USB HID Devices` • `POS Hardware Workflows`
+
+### Web, Mobile & Data
+`Progressive Web Apps` • `Supabase` • `Vercel` • `Google Sheets` • `Google Apps Script` • `CSV Processing` • `Mobile-first UX`
+
+---
+
+## Public Portfolio & Security
+
+Some projects were created for specialized workplace environments. Public documentation intentionally omits credentials, internal infrastructure, production hostnames, private configuration values, proprietary payloads, sensitive maintenance commands, and employer-specific operational data.
+
+The goal of this portfolio is to demonstrate the **engineering approach, workflow design, reliability logic, automation patterns, and user experience** without exposing production environments.
+
+---
+
+<p align="center">
+  <b>Simple interfaces. Reliable automation. Real-world usefulness.</b>
+</p>
