@@ -52,7 +52,7 @@ A warehouse-focused inventory system combining printable QR labels, phone scanni
 | Project | Purpose | Engineering Focus |
 |---|---|---|
 | **[Service Pack Upgrade Utility](projects/service-pack-upgrade-utility.md)** | Coordinates multi-target upgrades through install, reboot, recovery, and completion | Deployment orchestration • State machines • Reboot monitoring |
-| **[Healthy Benefits Upgrade Utility](projects/healthy-benefits-upgrade-utility.md)** | Guided remote software upgrade workflow with protection-state preservation | Remote deployment • Validation • State restoration |
+| **[Healthy Benefits Upgrade Utility V1](projects/healthy-benefits-upgrade-utility.md)** | Guided V1 remote upgrade workflow with explicit lane selection and post-upgrade HB verification | Remote deployment • Status scanning • Verification |
 | **[Menusys Management Tool](projects/menusys-management-tool.md)** | Centralized configuration and selected-target deployment management | Configuration • Deployment • Operator workflow |
 | **[CFG Editor & Deployment Tool](projects/cfg-editor-deployment-tool.md)** | Source discovery, controlled configuration editing, and selected-lane deployment | Discovery • Configuration lifecycle • Validation |
 | **[WinPOS Restart Utility](projects/winpos-restart-utility.md)** | Verified remote application restart with context-aware execution | Process lifecycle • Interactive sessions • Remote automation |
@@ -62,6 +62,7 @@ A warehouse-focused inventory system combining printable QR labels, phone scanni
 | Project | Purpose | Engineering Focus |
 |---|---|---|
 | **[5916 Firmware Flash Utility](projects/5916-firmware-flash-utility.md)** | Scans, updates, and verifies display firmware across active systems | Firmware • Hardware integration • Verification-first automation |
+| **[Pinpad Maintenance Utility](projects/pinpad-maintenance-utility.md)** | Local payment-device servicing, driver maintenance, profile deployment, and staged loading | Payment hardware • Drivers • State/timer management |
 | **[Remote PINPAD Maintenance Utility](projects/remote-pinpad-maintenance.md)** | Coordinates complex remote payment-device maintenance and recovery | Payment hardware • State management • Process control |
 
 ## Data & Operational Automation
@@ -94,7 +95,7 @@ My work repeatedly follows the same engineering principles:
 ## Technology & Engineering Areas
 
 ### Desktop & Windows
-`Python` • `Windows GUI Applications` • `PowerShell` • `Batch` • `Remote Administration` • `Process Management` • `Executable Packaging`
+`Python` • `C# / .NET` • `Windows Forms` • `Windows GUI Applications` • `PowerShell` • `Batch` • `Remote Administration` • `Process Management` • `Executable Packaging`
 
 ### Systems & Operations
 `Deployment Automation` • `Configuration Management` • `Windows Event Logs` • `Remote Diagnostics` • `Reboot Monitoring` • `State Machines` • `Fleet Operations`
