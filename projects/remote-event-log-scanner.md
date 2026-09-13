@@ -1,36 +1,51 @@
 # Remote Event Log Scanner
 
-A centralized Windows event-log diagnostic tool for scanning multiple remote devices and presenting results in a technician-friendly interface.
+A centralized Windows event-log diagnostic utility for scanning multiple remote devices and presenting results in a technician-friendly interface without losing per-system context.
 
-## Problem
+## The Problem
 
-Troubleshooting Windows systems often means opening Event Viewer on one machine at a time, repeating the same filters, and manually separating relevant events by device. That makes multi-system diagnosis slow and difficult to compare.
+Traditional Windows troubleshooting often means opening Event Viewer one machine at a time, repeating the same filters, copying event details manually, and trying to compare results across systems afterward. That process is slow and makes it difficult to tell whether an issue is isolated to one device or repeated across the environment.
 
-## Solution
+## The Solution
 
-Remote Event Log Scanner lets a technician choose target types, event logs, severity levels, and time ranges from one interface, then gathers matching events and keeps the results grouped by device.
+Remote Event Log Scanner gives the technician one interface for choosing target types, Windows logs, severity levels, and time windows. It gathers matching events remotely, groups them by device, and provides a compact result view with deeper event details available on demand.
 
 ## Core Capabilities
 
-- Active POS and server target selection
-- System and Application log filtering
-- Critical, Error, and Warning severity controls
-- Quick time-range filters from recent hours through multiple days
-- Device-grouped results
+- Active POS and infrastructure-server target modes
+- System and Application log selection
+- Critical, Error, and Warning severity filtering
+- Quick time windows ranging from recent hours through multiple days
+- Device-grouped result presentation
 - Collapsible device sections
-- Newest-event-first sorting within each device
-- Compact results grid
-- Event details pane on selection
-- Expanded detail view for deeper inspection
-- Scan summary for quick triage
-- Defaults tuned for common support scenarios
+- Newest-event-first ordering within each system
+- Scan summary for fast triage
+- Compact primary results grid
+- Single-click event details pane
+- Expanded detail view for deeper investigation
+- Defaults optimized for common technician workflows
 
 ## Engineering Focus
 
-The important UX decision was preserving device context. Events are never blended into one undifferentiated list; results remain grouped by system so a technician can quickly see whether a failure is isolated or repeated across endpoints.
+The most important interface decision was **preserving device context**. Events are never merged into one undifferentiated timeline. A technician can see which system generated an event, collapse systems that are not relevant, and compare patterns across endpoints without losing ownership of the evidence.
+
+The utility also separates filtering from inspection: broad controls quickly reduce the search space, while the details pane keeps long event messages out of the main grid until the technician actually needs them.
+
+## Reliability & UX Design
+
+- Keep every event tied to its originating device
+- Sort consistently within each device group
+- Distinguish target discovery from event retrieval failures
+- Use sensible default filters for common support cases
+- Avoid overloading the main grid with full message text
+- Make deeper event content available without leaving the workflow
 
 ## What This Demonstrates
 
-Windows diagnostics, remote event-log collection, filtering, hierarchical results presentation, and technician-focused interface design.
+Windows Event Log integration, remote diagnostics, hierarchical data presentation, filtering systems, multi-target troubleshooting, UI information architecture, and technician-focused desktop design.
 
-> Public documentation omits internal host discovery methods, authentication details, and production environment identifiers.
+## Technology
+
+`Python` • `Windows Event Logs` • `Remote Administration` • `Desktop GUI` • `Filtering & Grouped Results`
+
+> Public documentation omits internal host-discovery methods, authentication details, network information, and production environment identifiers.
