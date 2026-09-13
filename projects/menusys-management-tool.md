@@ -4,36 +4,45 @@ A centralized Windows management utility for controlled configuration and deploy
 
 ## The Problem
 
-Configuration changes and file deployments across multiple endpoints can become repetitive and error-prone when each machine must be handled separately.
+Configuration changes and file deployments become repetitive and risky when each endpoint must be handled independently. Technicians need a way to identify eligible systems, make the deployment scope explicit, stage approved content, and confirm what happened on every target.
 
 ## The Solution
 
-The Menusys Management Tool gives the operator one place to discover eligible systems, choose specific targets, stage approved content, deploy it, and review the outcome.
+The Menusys Management Tool provides one operator interface for discovering systems, selecting exactly which devices should be changed, staging source content, deploying it, and reviewing per-target results.
 
-## Key Features
+## Core Capabilities
 
 - Centralized target discovery
-- Multi-select deployment workflow
-- Controlled source/staging process
-- Per-target progress and result reporting
-- GUI designed around technician workflows
-- Reusable deployment pattern for related administration tools
-- Guardrails that keep the operator in control of which systems are changed
+- Explicit multi-select deployment scope
+- Controlled source/staging workflow
+- Selected-target file/configuration deployment
+- Per-target progress reporting
+- Clear success and failure outcomes
+- Technician-oriented Windows GUI
+- Reusable deployment pattern later applied to related utilities
+- Operator-controlled target selection rather than automatic broad rollout
 
 ## Engineering Focus
 
-The project is centered on safe repeatability: separate source selection from target selection, make the deployment scope explicit, and provide clear feedback for each remote system.
+The main design principle is **safe repeatability**. Source selection and target selection are kept separate so the operator can verify both before making a change. The tool also treats each remote system independently so a failure on one target does not obscure successful deployments elsewhere.
+
+The project became a reference pattern for several later administration tools because it established a reliable structure for discovery, staging, selection, deployment, and result reporting.
+
+## Reliability & Guardrails
+
+- Discover and validate targets before deployment
+- Require explicit target selection
+- Separate the source artifact from destination scope
+- Report results individually for each system
+- Avoid assuming all systems share the same availability or state
+- Keep operational feedback visible throughout the deployment
+
+## What This Demonstrates
+
+Configuration management, remote deployment, multi-target Windows automation, technician-facing GUI design, scope control, reusable workflow architecture, and error isolation.
 
 ## Technology
 
-- Python
-- Windows GUI development
-- Remote file deployment
-- Configuration-management workflows
-- Executable packaging
+`Python` • `Windows GUI` • `Remote File Deployment` • `Configuration Management` • `Executable Packaging`
 
-## Status
-
-Developed as a proven management pattern and used as a reference design for later remote deployment utilities.
-
-> Public documentation intentionally omits proprietary file names, internal system-discovery logic, credentials, private paths, and production configuration data.
+> Public documentation intentionally omits proprietary file names, internal system-discovery logic, credentials, production paths, and private configuration data.
