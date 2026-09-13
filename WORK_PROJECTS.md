@@ -30,14 +30,14 @@ Searches Windows event logs across multiple devices using target, log, severity,
 ## Deployment & Upgrade Automation
 
 ### [Service Pack Upgrade Utility](projects/service-pack-upgrade-utility.md)
-Coordinates multi-target software upgrades across POS and server systems, including preflight checks, payload selection, installer monitoring, reboot detection, recovery, and post-upgrade protection-state restoration.
+Coordinates multi-target software upgrades across POS and server systems, including preflight checks, payload selection, installer monitoring, reboot detection, recovery, and post-upgrade restoration.
 
 **Engineering areas:** fleet deployment, state machines, reboot-aware monitoring, remote process execution, package management, safety checks.
 
-### [Healthy Benefits Upgrade Utility](projects/healthy-benefits-upgrade-utility.md)
-A guided multi-lane upgrade tool with protection-state awareness, upgrade orchestration, status scanning, and state restoration designed around a repeatable technician workflow.
+### [Healthy Benefits Upgrade Utility V1](projects/healthy-benefits-upgrade-utility.md)
+A guided Version 1 multi-lane upgrade tool with explicit target selection, dedicated status scans, and post-upgrade Healthy Benefits verification.
 
-**Engineering areas:** remote deployment, system-state preservation, upgrade validation, technician-facing workflow design.
+**Engineering areas:** remote deployment, status scanning, post-maintenance verification, technician-facing workflow design.
 
 ### [Menusys Management Tool](projects/menusys-management-tool.md)
 Centralizes controlled configuration and deployment actions across selected systems from one operator interface.
@@ -63,10 +63,15 @@ Scans firmware state across active systems, identifies current versus outdated d
 
 **Engineering areas:** firmware integration, hardware state detection, vendor tool orchestration, verification-first workflows, fault isolation.
 
+### [Pinpad Maintenance Utility](projects/pinpad-maintenance-utility.md)
+A local payment-device servicing application for parameter setup, device inspection, driver maintenance, profile deployment, staged loading, reboot operations, and verification.
+
+**Engineering areas:** payment hardware, Windows driver management, staged device loading, parameter validation, readiness-state tracking.
+
 ### [Remote PINPAD Maintenance Utility](projects/remote-pinpad-maintenance.md)
 Coordinates a dependency-heavy remote payment-device maintenance workflow involving application state, maintenance mode, device loading, validation, and controlled completion.
 
-**Engineering areas:** payment hardware, remote process control, state management, multi-step transaction-system maintenance, recovery safeguards.
+**Engineering areas:** payment hardware, remote process control, state management, multi-step maintenance, recovery safeguards.
 
 ---
 
@@ -100,7 +105,7 @@ These projects repeatedly use the same engineering principles:
 
 ## Technology Areas
 
-`Python` • `Windows Automation` • `PowerShell` • `Batch` • `Remote Administration` • `Desktop GUI` • `Executable Packaging` • `Windows Event Logs` • `Hardware/Firmware Integration` • `QR Systems` • `Google Sheets` • `CSV/Data Processing` • `Deployment Orchestration` • `State Management`
+`Python` • `C# / .NET` • `Windows Forms` • `Windows Automation` • `PowerShell` • `Batch` • `Remote Administration` • `Desktop GUI` • `Executable Packaging` • `Windows Event Logs` • `Hardware/Firmware Integration` • `Payment Device Maintenance` • `QR Systems` • `Google Sheets` • `CSV/Data Processing` • `Deployment Orchestration` • `State Management`
 
 ---
 
