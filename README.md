@@ -37,7 +37,8 @@ A warehouse-focused inventory system combining printable QR labels, phone scanni
 
 # Professional Work Portfolio
 
-➡️ **[View the complete categorized Work Projects Portfolio](WORK_PROJECTS.md)**
+➡️ **[View the complete categorized Work Projects Portfolio](WORK_PROJECTS.md)**  
+➡️ **[View the Project Capability Matrix](PROJECT_MATRIX.md)**
 
 ## Diagnostics & Troubleshooting
 
